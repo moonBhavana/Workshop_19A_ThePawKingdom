@@ -1,0 +1,99 @@
+<!-- Creation of a website that takes orders from a customer to provide the best pet grooming services -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Grooming Website</title>
+    <link rel="stylesheet" href="style.css">  <!--Linking the relevant css file for styling purpose -->
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+   
+</head>
+<h1 id="top-line" class="h1">The Paw Kingdom</h1> <!--Name of the website -->
+<body>
+     <!--Providing static background as image-->
+    <style>
+        body {
+            background-image: url('images/pet.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: 105% 105%;
+          }
+    </style>
+
+    <h3>
+        Dear Pet Parent !! <br>
+        Please choose the services your pet requires<br><br>
+    </h3>
+
+    <!--Providing the services list-->
+    <div class=service_list>
+        <label>
+            <input type="checkbox" id="Bath" name="Bath" value=10 onclick=Checkbox_Click()>
+            Bath : $10
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" id="Deshedding" name="Deshedding" value=5 onclick=Checkbox_Click()>
+            Deshedding : $5
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" id="Blow Drying" name="Blow Drying" value=8 onclick=Checkbox_Click()>
+            Blow Drying : $8
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" id="Tick & Flea Treatment" name="Tick & Flea Treatment" value=10 onclick=Checkbox_Click()>
+            Tick & Flea Treatment :$10
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" id="Shampoo & Conditioning" name="Shampoo & Conditioning" value=5 onclick=Checkbox_Click()>
+            Shampoo & Conditioning :$5
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" id="Full Body Trimming" name="Full Body Trimming" value=8 onclick=Checkbox_Click()>
+            Full Body Trimming :$8
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" id="Nail Clipping" name="Nail Clipping" value=6 onclick=Checkbox_Click()>
+            Nail Clipping : $6
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox"  id="Teeth Cleaning" name="Teeth Cleaning2" value=7 onclick=Checkbox_Click()>
+            Teeth Cleaning : $7
+        </label>      
+        <br><br>
+        <label>
+            <input type="checkbox" id="Sanitary Clipping" name="Sanitary Clipping" value=5 onclick=Checkbox_Click()>
+            Sanitary Clipping : $5
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" id="Dematting" name="Dematting" value=6 onclick=Checkbox_Click()>
+            Dematting : $6
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" id="Hair Styling" name="Hair Styling" value=5 onclick=Checkbox_Click()>
+            Hair Styling :  $5
+        </label>
+    </div>
+    <div class="discount">
+        <label>
+            <input type="checkbox" id="discountedTotal" name="discountedTotal" value = 0 onclick=Checkbox_Click()>
+            Apply Discount
+        </label>
+    </div>
+    <p id="output">
+        <script src="calculator.js"></script>
+    </p>
+
+    </body>
+</html>
